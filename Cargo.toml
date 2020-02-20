@@ -19,6 +19,8 @@ serde = {version="1.0.116", features=["derive"]}
 refinery = "0.4.0"
 barrel = "0.6.5"
 sqlx = {version="0.3.5",default-features = false, features=["runtime-tokio"]}
+tera = "1.5.0"
+lazy_static = "1.4.0"
 
 
 
