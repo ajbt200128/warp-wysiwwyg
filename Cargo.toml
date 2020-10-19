@@ -1,0 +1,27 @@
+[package]
+name = "warp-wysiwyg"
+version = "0.1.0"
+authors = ["ajbt200128 <austin@cutedogs.org>"]
+edition = "2018"
+
+[features]
+autoreload = ["listenfd", "hyper"]
+compression = ["warp/compression"]
+
+[dependencies]
+warp = {version="0.2.5", features=["tls"]}
+tokio = {version="0.2.22", features=["full"]}
+listenfd = {version="0.3.3", optional=true}
+hyper = {version="0.13.8", optional=true}
+tracing = "0.1.21"
+tracing-subscriber = "0.2.13"
+serde = {version="1.0.116", features=["derive"]}
+refinery = "0.4.0"
+barrel = "0.6.5"
+sqlx = {version="0.3.5", features=["runtime-tokio"]}
+
+
+
+[build-dependencies]
+toml = "0.5.7"
+serde = {version="1.0.116", features=["derive"]}

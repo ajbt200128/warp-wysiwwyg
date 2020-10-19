@@ -1,0 +1,10 @@
+#[server]
+##For autoreload, make sure these are the same as in run.sh
+##IP address used by server (Default 127.0.0.1)
+#ip = "127.0.0.1"
+##Port used by server (Default 3030)
+#port = 3030
+## TLS Cert path
+#tls_cert="tls/cert.pem"
+## TLS Key path
+#tls_key="tls/key.key"
